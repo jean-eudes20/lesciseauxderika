@@ -1,0 +1,41 @@
+{
+  "extras": [
+    { "label": "Shampoing coupe enfants - de 10 ans", "prix": "12€" },
+    { "label": "Shampoing coupe homme", "prix": "19€" }
+  ],
+  "categories": [
+    {
+      "nom": "Cheveux court",
+      "image": "img/salon1.jpg",
+      "prestations": [
+        { "label": "Shampoing coupe femme soin brushing", "prix": "30€" },
+        { "label": "Shampoing coupe couleur femme soin brushing", "prix": "60€" },
+        { "label": "Shampoing coupe meches femme soin brushing", "prix": "70€" },
+        { "label": "Shampoing coupe duo couleur femme soin brushing", "prix": "110€" },
+        { "label": "Lissage Brésilien", "prix": "150€" }
+      ]
+    },
+    {
+      "nom": "Cheveux mi-long",
+      "image": "img/IMG_7665.jpg",
+      "prestations": [
+        { "label": "Shampoing coupe femme soin brushing", "prix": "40€" },
+        { "label": "Shampoing coupe couleur femme soin brushing", "prix": "70€" },
+        { "label": "Shampoing coupe meches femme soin brushing", "prix": "80€" },
+        { "label": "Shampoing coupe duo couleur femme soin brushing", "prix": "120€" },
+        { "label": "Lissage Brésilien", "prix": "170€" }
+      ]
+    },
+    {
+      "nom": "Cheveux long",
+      "image": "img/IMG_7670.jpg",
+      "prestations": [
+        { "label": "Shampoing coupe femme soin brushing", "prix": "50€" },
+        { "label": "Shampoing coupe couleur femme soin brushing", "prix": "80€" },
+        { "label": "Shampoing coupe meches femme soin brushing", "prix": "90€" },
+        { "label": "Shampoing coupe duo couleur femme soin brushing", "prix": "130€" },
+        { "label": "Lissage Brésilien", "prix": "190€" }
+      ]
+    }
+  ]
+}
