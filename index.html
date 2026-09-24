@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les ciseaux d'Erika</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <!-- Nécessaire pour que les liens d'invitation/récupération Netlify Identity
+         (qui pointent vers la racine du site) fonctionnent sans passer par un
+         plan payant pour personnaliser les templates d'email. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Les ciseaux d'Erika</h1>
+        <a href="#contact" class="bcont"> Contact</a>
+        <a href="#salon" class="scroll"><span class="arrow"></span>
+            <span class="sr-only">Aller au contenu</span></a>
+    </header>
+
+    <div class="main">
+        <main>
+            <div class="salon" id="salon">
+                <img src="img/ciseaux-cr.png" alt="" class="ciseaux1">
+                <h2>Notre salon</h2>
+                <p class="desc"><span>Les Ciseaux d'Erika</span>, c’est plus qu’un salon,
+                    c’est un lieu où l’on se sent privilégié,
+                    où l’on est écouté, où l’on prend le temps. Parce que le
+                    Luxe c’est d’avoir du temps pour réaliser
+                    un travail de qualité et que la Beauté c’est de savoir
+                    mettre en valeur grâce à des conseils la
+                    personnalité de chaque client.​</p>
+            </div>
+            <h2>Les tarifs</h2>
+            <div class="enfant" id="tarifs-extras">
+                <!-- rempli par script.js depuis data/tarifs.json -->
+            </div>
+            <div class="coupe" id="tarifs-categories">
+                <!-- rempli par script.js depuis data/tarifs.json -->
+            </div>
+            <div class="hoco">
+                <img src="img/ciseaux.png" alt="" class="ciseaux">
+                <div>
+                    <h2>Nos Horaires</h2>
+                    <div class="horaire">
+                        <div class="jour" id="horaires-jours">
+                            <!-- rempli par script.js depuis data/horaires.json -->
+                        </div>
+                        <div class="heure" id="horaires-heures">
+                            <!-- rempli par script.js depuis data/horaires.json -->
+                        </div>
+                    </div>
+                </div>
+                <div id="contact">
+                    <h2>Contact</h2>
+                    <div class="conta" id="contact-infos">
+                        <!-- rempli par script.js depuis data/contact.json -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="mention">
+        <div>
+            <div class="textem">
+                <h2 class="propos">À propos</h2>
+                <h2 class="menti">Mention légale</h2>
+
+                <div class="apropos">
+                    <p>
+                        Je suis titulaire du CAP et du BP coiffure depuis 2000.
+
+                        Obtention du Brevet de Maitrise en juin 2022.
+
+                        Dynamique et passionnée j'ai crée mon salon en 2013.
+
+                        Je vous invite à venir découvrir mon aptitude à vous conseiller sur vos coupes, couleurs ou
+                        transformations. <br> <br>
+                    </p>
+                    <span>Moyen de paiment : espèces ou virement </span>
+
+                    <nav id="reseaux">
+                        <!-- rempli par script.js depuis data/contact.json -->
+                    </nav>
+                </div>
+
+                <div class="men" id="mentions-legales">
+                    <!-- rempli par script.js depuis data/contact.json -->
+                    <p><strong>Hébergeur :</strong> Netlify</p>
+                    <p><strong>Crédits photos :</strong> Les photos utilisées sur ce site proviennent de sources
+                        libres
+                        de droits et de ma
+                        propre collection.</p>
+                    <p><strong>Conçu par :</strong> Ines Derri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Si le lien du mail (invitation, confirmation, mot de passe oublié)
+        // atterrit ici avec un token dans l'URL, le widget Identity l'attrape
+        // et ouvre automatiquement la fenêtre pour définir le mot de passe.
+        // Une fois connectée, on redirige vers /admin pour éditer le site.
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+            });
+        }
+    </script>
+</body>
+
+</html>
